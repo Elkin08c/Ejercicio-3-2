@@ -72,3 +72,16 @@ const programmingBooks = [
 let buscarTitulo = prompt("Ingrese nombre del libro:");
 let libroEncontrado = programmingBooks.includes(buscarTitulo);
 alert(libroEncontrado ? `${buscarTitulo} si existe sete libro.` : `${buscarTitulo} no existe este libro.`);
+
+// Cada libro del ejercicio anterior se encuentra ubicado en una estantería diferente
+// dentro de una biblioteca, el índice del vector indica el numero de la estantería.
+// Mostrar el numero de la estantería donde se encuentra el libro “You Don’t Know JS
+
+const libroBuscado = "You Don't Know JS";
+    let numeroEstanteria = programmingBooks.indexOf(libroBuscado);
+    
+    if (numeroEstanteria !== -1) {
+    alert(El libro "${libroBuscado}" se encuentra en la estantería número ${numeroEstanteria}.);
+    } else {
+    alert(El libro "${libroBuscado}" no se encuentra en ninguna estantería.);
+}
